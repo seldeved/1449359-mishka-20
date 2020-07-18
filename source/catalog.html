@@ -9,7 +9,8 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="http://dummyimage.com/86x34/000000/ffffff.svg&text=MISHKA" width="86" height="34" alt="Логотип интернет-магазина Мишка">
+      <img src="http://dummyimage.com/86x34/000000/ffffff.svg&text=MISHKA" width="86" height="34"
+        alt="Логотип интернет-магазина Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -42,48 +43,75 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <h1 class="visually-hidden">Каталог товаров</h1>
+  <main class="page-catalog">
+    <h1 class="visually-hidden">Страница каталога товаров интернет-магазина Мишка</h1>
 
-    <section class="catalog">
-
+    <section class="product-catalog">
+      <h2 class="product-catalog__title">Каталог товаров</h2>
+      <ul class="product__list">
+        <li class="product__item product__item--rabbit">
+          <a class="product__link" href="#">
+            <img src="http://dummyimage.com/260x315/#D3D3D3/000000.svg&text=260х195" width="260" height="195"
+            alt="Вязаная кукла &quot;Зайчик-попрыгайчик&quot;">
+            <h3 class="product__title">Зайчик-попрыгайчик</h3>
+            <p class="product__description">Рост 30 см, вес 200 г</p>
+          </a>
+        </li>
+      </ul>
     </section>
 
-
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-
-        <section class="page-footer__social social">
-          <h2 class="social__title visually-hidden">Мы в соцсетях</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#" aria-label="instagram">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#" aria-label="facebook">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#" aria-label="twitter">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Логотип HTML Academy">
-            HTML Academy
-          </a>
-        </div>
-
-      </div>
-    </footer>
   </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+
+      <section class="page-footer__social social">
+        <h2 class="social__title visually-hidden">Мы в соцсетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#" aria-label="instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="twitter">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Логотип HTML Academy">
+          HTML Academy
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <section class="modal-popup">
+    <h2 class="modal-popup__title">Добавить в корзину</h2>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <p class="modal-popup__text">Выберите размер&colon;</p>
+        <label>
+          <input class="size__input--small" type="radio" name="size-select" value="S" checked> S
+        </label>
+        <label>
+          <input class="size__input" type="radio" name="size-select" value="M"> M
+        </label>
+        <label>
+          <input class="size__input" type="radio" name="size-select" value="L"> L
+        </label>
+        <button class="size__button" type="submit">Показать</button>
+    </form>
+  </section>
 
 </body>
 

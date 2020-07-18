@@ -175,40 +175,58 @@
       <a class="contacts__write button" href="#">Напишите нам</a>
     </section>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-
-        <section class="page-footer__social social">
-          <h2 class="social__title visually-hidden">Мы в соцсетях</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#" aria-label="instagram">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#" aria-label="facebook">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#" aria-label="twitter">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Логотип HTML Academy">
-            HTML Academy
-          </a>
-        </div>
-
-      </div>
-    </footer>
   </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+
+      <section class="page-footer__social social">
+        <h2 class="social__title visually-hidden">Мы в соцсетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#" aria-label="instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="twitter">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Логотип HTML Academy">
+          HTML Academy
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <section class="modal-popup">
+    <h2 class="modal-popup__title">Добавить в корзину</h2>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <p class="modal-popup__text">Выберите размер&colon;</p>
+        <label>
+          <input class="size__input--small" type="radio" name="size-select" value="S" checked> S
+        </label>
+        <label>
+          <input class="size__input" type="radio" name="size-select" value="M"> M
+        </label>
+        <label>
+          <input class="size__input" type="radio" name="size-select" value="L"> L
+        </label>
+        <button class="size__button" type="submit">Показать</button>
+    </form>
+  </section>
 
 </body>
 
