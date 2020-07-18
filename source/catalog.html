@@ -8,7 +8,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
+    <a class="page-header__logo" href="index.html" title="Логотип интернет-магазина Мишка">
       <img src="http://dummyimage.com/86x34/000000/ffffff.svg&text=MISHKA" width="86" height="34"
         alt="Логотип интернет-магазина Мишка">
     </a>
@@ -52,12 +52,44 @@
         <li class="product__item product__item--rabbit">
           <a class="product__link" href="#">
             <img src="http://dummyimage.com/260x315/#D3D3D3/000000.svg&text=260х195" width="260" height="195"
-            alt="Вязаная кукла &quot;Зайчик-попрыгайчик&quot;">
+              alt="Вязаная кукла &quot;Зайчик-попрыгайчик&quot;">
             <h3 class="product__title">Зайчик-попрыгайчик</h3>
-            <p class="product__description">Рост 30 см, вес 200 г</p>
           </a>
+          <p class="product__description">Рост 30 см, вес 200 г</p>
+          <div class="product__price wrapper">
+            <span class="product__price">1200 руб.</span>
+            <a class="product__order button" href="#" title="Добавить к заказу">Корзина</a>
+          </div>
+        </li>
+        <li class="product__item product__item--small-basket">
+          <a class="product__link" href="#">
+            <img src="http://dummyimage.com/260x315/#D3D3D3/000000.svg&text=260х195" width="260" height="195"
+              alt="Корзинка для белья">
+            <h3 class="product__title">Корзинка для белья</h3>
+          </a>
+          <p class="product__description">Диаметр 15 см, высота 10 см</p>
+          <div class="product__price wrapper">
+            <span class="product__price">690 руб.</span>
+            <a class="product__order button" href="#" title="Добавить к заказу">Корзина</a>
+          </div>
+        </li>
+        <li class="product__item product__item--big-basket">
+          <a class="product__link" href="#">
+            <img src="http://dummyimage.com/260x315/#D3D3D3/000000.svg&text=260х195" width="260" height="195"
+              alt="Большая корзинка для игрушек">
+            <h3 class="product__title">Большая корзинка для игрушек</h3>
+          </a>
+          <p class="product__description">Диаметр 30 см, высота 30 см</p>
+          <div class="product__price wrapper">
+            <span class="product__price">1500 руб.</span>
+            <a class="product__order button" href="#" title="Добавить к заказу">Корзина</a>
+          </div>
         </li>
       </ul>
+    </section>
+
+    <section class="video">
+
     </section>
 
   </main>
@@ -100,16 +132,16 @@
     <h2 class="modal-popup__title">Добавить в корзину</h2>
     <form action="https://echo.htmlacademy.ru" method="get">
       <p class="modal-popup__text">Выберите размер&colon;</p>
-        <label>
-          <input class="size__input--small" type="radio" name="size-select" value="S" checked> S
-        </label>
-        <label>
-          <input class="size__input" type="radio" name="size-select" value="M"> M
-        </label>
-        <label>
-          <input class="size__input" type="radio" name="size-select" value="L"> L
-        </label>
-        <button class="size__button" type="submit">Показать</button>
+      <label>
+        <input class="size__input--small" type="radio" name="size-select" value="S" checked> S
+      </label>
+      <label>
+        <input class="size__input" type="radio" name="size-select" value="M"> M
+      </label>
+      <label>
+        <input class="size__input" type="radio" name="size-select" value="L"> L
+      </label>
+      <button class="size__button" type="submit">Показать</button>
     </form>
   </section>
 
