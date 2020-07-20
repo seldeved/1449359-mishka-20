@@ -50,15 +50,13 @@
       <h2>Милые штуки ручной работы для дома</h2>
       <ul class="categories__list">
         <li class="categories__item">
-          <a class="categories__wrap-link" href="#">
+          <a class="categories__wrap-link categories__wrap-link--interior" href="#">
             <h3 class="categories__title">Предметы интерьера</h3>
-            <div class="categories__icon categories__icon--interior" aria-hidden="true"></div>
           </a>
         </li>
         <li class="categories__item">
-          <a class="categories__wrap-link" href="#">
+          <a class="categories__wrap-link categories__wrap-link--toys" href="#">
             <h3 class="categories__title">Детские игрушки</h3>
-            <div class="categories__icon categories__icon--toys" aria-hidden="true"></div>
           </a>
         </li>
       </ul>
@@ -129,7 +127,7 @@
         <h2 class="review__title">Отзывы</h2>
         <div class="review__list">
           <blockquote class="review__item">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
               лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
               фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <div class="review__author-info">
@@ -140,7 +138,7 @@
             </div>
           </blockquote>
         </div>
-        <p class="review_toggles">
+        <p class="review__toggles">
           <button class="review__prev" type="button">Предыдущий отзыв</button>
           <button class="review__next" type="button">Следующий отзыв</button>
         </p>
@@ -150,27 +148,29 @@
 
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts-table">
+      <table class="contacts__table">
         <tbody>
-          <tr class="contacts-row">
-            <td class="contacts-cell">e-mail&colon;</td>
-            <td class="contacts-cell">
-              <a href="e-mail:info@mimimishkashop.ru">
+          <tr class="contacts__row">
+            <td class="contacts__cell">e-mail&colon;</td>
+            <td class="contacts__cell">
+              <a href="mailto:info@mimimishkashop.ru">
                 info@mimimishkashop.ru
               </a>
             </td>
           </tr>
-          <tr class="contacts-row">
-            <td class="contcts-cell">адрес&colon;</td>
-            <td class="contacts-cell">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          <tr class="contacts__row">
+            <td class="contacts__cell">адрес&colon;</td>
+            <td class="contacts__cell">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
           </tr>
         </tbody>
       </table>
       <div class="map">
-        <iframe
+        <img src="http://dummyimage.com/322x457/#D3D3D3/000000.svg" width="322" height="457"
+        alt="Адрес на карте: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595019765121!5m2!1sru!2sru"
-          width="322" height="457" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
+          width="322" height="457" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe> -->
       </div>
       <a class="contacts__write button" href="#">Напишите нам</a>
     </section>
@@ -213,18 +213,18 @@
 
   <section class="modal-popup">
     <h2 class="modal-popup__title">Добавить в корзину</h2>
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <form class="modal-popup__form" action="https://echo.htmlacademy.ru" method="get">
       <p class="modal-popup__text">Выберите размер&colon;</p>
         <label>
-          <input class="size__input--small" type="radio" name="size-select" value="S" checked> S
+          <input class="modal-popup__size-input modal-popup__size-input--small" type="radio" name="size-select" value="S" checked> S
         </label>
         <label>
-          <input class="size__input" type="radio" name="size-select" value="M"> M
+          <input class="modal-popup__size-input" type="radio" name="size-select" value="M"> M
         </label>
         <label>
-          <input class="size__input" type="radio" name="size-select" value="L"> L
+          <input class="modal-popup__size-input" type="radio" name="size-select" value="L"> L
         </label>
-        <button class="size__button" type="submit">Показать</button>
+        <button class="modal-popup__submit-button" type="submit">Показать</button>
     </form>
   </section>
 
