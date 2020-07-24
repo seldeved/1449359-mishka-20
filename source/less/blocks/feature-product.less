@@ -1,0 +1,50 @@
+.feature-product {
+  .normal-text(15px, 24px);
+  margin-bottom: 73px;
+
+  &__title {
+    .header-text(25px, 30px);
+    margin: 0;
+  }
+
+  &__weekly {
+    .header-text(17px, 20px, @main-cyan);
+    text-transform: uppercase;
+  }
+}
+
+.feature-product__wrapper {
+  width: 320px;
+  padding: 0 30px;
+}
+
+.feature-product__description {
+  margin-top: 18px;
+  margin-bottom: 28px;
+}
+
+.feature-product__specs-table {
+  margin-bottom: 28px;
+  border-collapse: collapse;
+}
+
+.feature-product__specs-row {
+  border-bottom: 1px solid @box-border-color;
+  display: inline-block;
+  min-height: 39px;
+  width: 260px;
+}
+
+.feature-product__specs-cell--right {
+  width: 97px;
+}
+
+.feature-product__price {
+  .header-text(17px, 24px, @text-black);
+  margin: 0;
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
