@@ -1,18 +1,3 @@
-.form__title {
-  .header-text(27px, 30px);
-  margin: 0;
-
-  &-wrapper {
-    min-height: 177px;
-    padding: 0 30px;
-    background-color: #F1F1F1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 17px;
-  }
-}
-
 .form__container {
   padding: 17px 30px 55px;
 }
@@ -20,6 +5,7 @@
 .form__intro {
   margin: 0;
   margin-bottom: 29px;
+  .normal-text(13px, 24px);
 }
 
 .form__control-list {
@@ -71,7 +57,7 @@
 }
 
 .form__label {
-  .header-text(17px; 18px);
+  .header-text(17px, 18px);
   display: block;
 
   &--radio {
@@ -89,59 +75,31 @@
   }
 }
 
-.form__control--text {
+.form__control {
+  .normal-text(19px, 18px);
   width: 100%;
   min-height: 52px;
-  box-shadow: inset 0px -2px 0px @basic-black;
   border-color: transparent;
-  margin-bottom: 22px;
-
-  &::-webkit-input-placeholder {
-    .normal-text(17px, 18px);
-    color: @placeholder-black;
-  }
-
-  &::-moz-placeholder {
-    .normal-text(17px, 18px);
-    color: @placeholder-black;
-  }
+  box-shadow: inset 0 -2px @basic-black;
 
   &::placeholder {
-    .normal-text(17px, 18px);
-    color: @placeholder-black;
+    .normal-text(17px, 18px, @placeholder-black);
+  }
+
+  &--text {
+    margin-bottom: 22px;
+  }
+
+  &--textarea {
+    min-height: 142px;
+    padding: 17px 18px;
+    border: 2px solid @text-black;
+    box-shadow: none;
   }
 }
 
-.form__control--tel,
-.form__control--email {
-  width: 100%;
-  min-height: 52px;
-  box-shadow: inset 0px -2px 0px @basic-black;
-  border-color: transparent;
-
-  &::-webkit-input-placeholder {
-    .normal-text(17px, 18px);
-    color: @placeholder-black;
-  }
-
-  &::-moz-placeholder {
-    .normal-text(17px, 18px);
-    color: @placeholder-black;
-  }
-
-  &::placeholder {
-    .normal-text(17px, 18px);
-    color: @placeholder-black;
-  }
-}
-
-.form__control--textarea {
-  .normal-text(17px, 18px);
-  color: @placeholder-black;
-  width: 100%;
-  min-height: 142px;
-  padding: 17px 18px;
-  border: 2px solid @text-black;
+.form__control--tel::placeholder {
+  .normal-text(19px, 18px, @placeholder-black);
 }
 
 .form__required {
