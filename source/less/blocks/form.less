@@ -1,0 +1,156 @@
+.form__title {
+  .header-text(27px, 30px);
+  margin: 0;
+
+  &-wrapper {
+    min-height: 177px;
+    padding: 0 30px;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+  }
+}
+
+.form__container {
+  padding: 17px 30px 55px;
+}
+
+.form__intro {
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.form__control-list {
+  .no-markers();
+
+  &--type {
+    margin-left: 92px;
+  }
+
+  &--color {
+    margin-left: 93px;
+  }
+}
+
+.form__fieldset {
+  .custom-form();
+  // margin-bottom: 39px;
+
+  &--extra {
+    margin-bottom: 15px;
+    padding-top: 32px;
+  }
+
+  &--tel,
+  &--email {
+    margin-bottom: 35px;
+  }
+}
+
+.form__legend {
+  .custom-legend();
+
+  &--type {
+    margin-bottom: 24px;
+  }
+
+  &--color {
+    margin-bottom: 25px;
+  }
+
+  &--name {
+    margin-bottom: 29px;
+  }
+
+  &--tel,
+  &--email {
+    margin-bottom: 5px;
+  }
+}
+
+.form__label {
+  .header-text(17px; 18px);
+  display: block;
+
+  &--radio {
+    min-height: 42px;
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+  }
+
+  &--checkbox {
+    min-height: 39px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form__control--text {
+  width: 100%;
+  min-height: 52px;
+  box-shadow: inset 0px -2px 0px @basic-black;
+  border-color: transparent;
+  margin-bottom: 22px;
+
+  &::-webkit-input-placeholder {
+    .normal-text(17px, 18px);
+    color: @placeholder-black;
+  }
+
+  &::-moz-placeholder {
+    .normal-text(17px, 18px);
+    color: @placeholder-black;
+  }
+
+  &::placeholder {
+    .normal-text(17px, 18px);
+    color: @placeholder-black;
+  }
+}
+
+.form__control--tel,
+.form__control--email {
+  width: 100%;
+  min-height: 52px;
+  box-shadow: inset 0px -2px 0px @basic-black;
+  border-color: transparent;
+
+  &::-webkit-input-placeholder {
+    .normal-text(17px, 18px);
+    color: @placeholder-black;
+  }
+
+  &::-moz-placeholder {
+    .normal-text(17px, 18px);
+    color: @placeholder-black;
+  }
+
+  &::placeholder {
+    .normal-text(17px, 18px);
+    color: @placeholder-black;
+  }
+}
+
+.form__control--textarea {
+  .normal-text(17px, 18px);
+  color: @placeholder-black;
+  width: 100%;
+  min-height: 142px;
+  padding: 17px 18px;
+  border: 2px solid @text-black;
+}
+
+.form__required {
+  .normal-text(14px, 16px);
+  margin-bottom: 30px;
+}
+
+.form__submit {
+  line-height: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
