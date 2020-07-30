@@ -1,3 +1,25 @@
-.page-header__container {
-  width: 320px;
+.page-header__wrapper {
+  min-height: 79px;
+  border-bottom: 1px solid @box-border-color;
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 89px;
+  }
+}
+
+.page-header__logo {
+  display: inline-block;
+}
+
+.page-header__logo-svg {
+  width: 86px;
+  height: 34px;
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
 }

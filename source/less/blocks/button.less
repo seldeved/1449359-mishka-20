@@ -8,4 +8,19 @@
   padding: 16px 15px;
   box-sizing: border-box;
   text-align: center;
+
+  &--contacts {
+    font-size: 18px;
+
+    @media (min-width: @tablet-width) {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 80%;
+      margin: 0;
+    }
+  }
 }

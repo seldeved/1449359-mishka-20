@@ -1,9 +1,20 @@
 .page-footer {
   background-color: @header-bg-color;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.page-footer__container {
-  width: 320px;
-  min-height: 160px;
-  padding: 0 30px;
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
