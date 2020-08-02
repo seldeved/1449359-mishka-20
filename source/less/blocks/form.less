@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
 
-    @media(min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
       padding-left: 60px;
       padding-top: 0;
     }
@@ -32,13 +32,13 @@
     padding-left: 60px;
     padding-top: 25px;
 
-    @media(min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 60px;
     }
 
-    @media(min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 100px;
     }
@@ -48,11 +48,11 @@
     padding-top: 29px;
     padding-bottom: 13px;
 
-    @media(min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
       padding: 0;
     }
 
-    @media(min-width: @desktop-width) {
+    @media (min-width: @desktop-width) {
       padding: 0;
       padding-right: 20px;
     }
@@ -60,7 +60,7 @@
 }
 
 .form__control-list--name li {
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     display: flex;
     align-items: baseline;
   }
@@ -73,29 +73,30 @@
   &--contacts {
     margin-bottom: 35px;
 
-    @media(min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
       margin-bottom: 0;
     }
   }
 }
 
 .form__fieldset-wrapper {
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: baseline;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
 
-    @media(min-width: @desktop-width) {
-      grid-template-columns: 1fr 5fr;
-    }
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 5fr;
+  }
 
-    &--grey {
-      background-color: @header-bg-color;
-    }
+  &--grey {
+    background-color: @header-bg-color;
   }
 }
+
 
 .form__legend {
   .custom-legend();
@@ -153,7 +154,7 @@
     top: -5px;
     width: 40px;
     height: 42px;
-    border: 2px solid #444444;
+    border: 2px solid @text-black;
     border-radius: 50%;
 
     @media (min-width: @tablet-width) {
@@ -180,7 +181,7 @@
     top: 0;
     width: 38px;
     height: 39px;
-    border: 2px solid #444444;
+    border: 2px solid @text-black;
 
     @media (min-width: @tablet-width) {
       width: 54px;
@@ -241,14 +242,14 @@
   }
 }
 
-.form__control--radio:checked+.form__label--radio::after {
+.form__control--radio:checked + .form__label--radio::after {
   content: "";
   position: absolute;
   left: -48px;
   top: 7px;
   width: 17px;
   height: 18px;
-  background-color: #62D1BA;
+  background-color: @input-button;
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
