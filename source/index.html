@@ -9,35 +9,53 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header container">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" title="Логотип интернет-магазина Мишка">
-        <img class="page-header__logo-svg" src="http://dummyimage.com/86x34/000000/ffffff.svg&text=MISHKA" width="86"
-          height="34" alt="Логотип интернет-магазина Мишка">
-      </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </div>
-
+  <header class="page-header">
     <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
+
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo" title="Логотип интернет-магазина Мишка">
+          <img class="main-nav__logo-svg" src="http://dummyimage.com/86x34/000000/ffffff.svg&text=MISHKA" width="86"
+            height="34" alt="Логотип интернет-магазина Мишка">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+
+      <ul class="main-nav__list main-nav__list--left">
+        <li class="main-nav__item main-nav__item--catalog">
           <a class="main-nav__link" href="catalog.html">
             Каталог товаров
           </a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--order">
           <a class="main-nav__link" href="form.html">
             Вязание на заказ
           </a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--search" href="#">
-            Поиск по сайту
+      </ul>
+
+      <ul class="main-nav__list main-nav__list--hidden">
+        <li class="main-nav__item main-nav__item--new">
+          <a class="main-nav__link" href="#">
+            Новые поступления
           </a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--sale">
+          <a class="main-nav__link" href="#">
+            Распродажа
+          </a>
+        </li>
+        <p class="main-nav__shipping">Бесплатная доставка по России</p>
+      </ul>
+
+      <ul class="main-nav__list main-nav__list--right">
+        <li class="main-nav__item main-nav__item--search">
+          <a class="main-nav__link main-nav__link--search" href="#">
+            <span class="main-nav__link-hide">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--cart">
           <a class="main-nav__link main-nav__link--cart" href="#">
             Корзина: пока пуста
           </a>
@@ -49,10 +67,8 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница интернет-магазина Мишка</h1>
-
     <section class="categories">
       <div class="categories__wrapper container">
-        <p class="categories__wrapper-shipping">Бесплатная доставка по России</p>
         <h2 class="categories__wrapper-header">Милые штуки ручной <br>работы для дома</h2>
       </div>
       <div class="container container--categories">
@@ -95,13 +111,13 @@
           </tbody>
         </table>
         <div class="feature-product__image">
-          <img class="feature-product__image-pic" src="http://dummyimage.com/260x315/#D3D3D3/000000.svg"
-            width="260" height="315" alt="Вязаные корзинки">
+          <img class="feature-product__image-pic" src="http://dummyimage.com/260x315/#D3D3D3/000000.svg" width="260"
+            height="315" alt="Вязаные корзинки">
         </div>
         <p class="feature-product__price">
           Цена&colon; 990 руб.
         </p>
-        <a class="feature-product__order button" href="#">Заказать</a>
+        <a class="button button--feature-product" href="#">Заказать</a>
       </div>
     </section>
 
@@ -130,23 +146,25 @@
     </section>
 
     <section class="review container">
-      <h2 class="review__title">Отзывы</h2>
-      <blockquote class="review__item">
-        <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-          лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-          фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <div class="review__author-info">
-          <cite class="review__author-name">
-            Анастасия Красильникова
-            <span class="review__author-login">@misssssiskras</span>
-          </cite>
+      <div class="review__wrapper">
+        <h2 class="review__title">Отзывы</h2>
+        <blockquote class="review__item">
+          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <div class="review__author-info">
+            <cite class="review__author-name">
+              Анастасия Красильникова
+              <span class="review__author-login">@misssssiskras</span>
+            </cite>
+          </div>
+        </blockquote>
+        <div class="review__toggles">
+          <button class="review__arrow" type="button" aria-label="Предыдущий отзыв">Влево</button>
+          <button class="review__arrow review__arrow--next" type="button" aria-label="Следующий отзыв">Вправо</button>
         </div>
-      </blockquote>
-      <div class="review__toggles">
-        <button class="review__arrow" type="button" aria-label="Предыдущий отзыв">Влево</button>
-        <button class="review__arrow review__arrow--next" type="button" aria-label="Следующий отзыв">Вправо</button>
+        <a class="review__write button" href="#">Написать</a>
       </div>
-      <a class="review__write button" href="#">Написать</a>
     </section>
 
     <section class="contacts">

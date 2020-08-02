@@ -2,7 +2,7 @@
   .header-text(17px, 20px, @text-black);
   text-transform: uppercase;
   display: inline-block;
-  width: 100%;
+  width: 260px;
   min-height: 52px;
   border: 2px solid @text-black;
   padding: 16px 15px;
@@ -13,14 +13,23 @@
     font-size: 18px;
 
     @media (min-width: @tablet-width) {
-      width: 40%;
+      width: 230px;
       display: block;
       margin: 0 auto;
     }
 
     @media (min-width: @desktop-width) {
-      width: 80%;
       margin: 0;
     }
+  }
+
+  &--feature-product {
+    @media (min-width: @tablet-width) {
+      width: 292px;
+    }
+  }
+
+  &--video {
+    width: 192px;
   }
 }

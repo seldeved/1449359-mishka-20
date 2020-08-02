@@ -10,55 +10,73 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__container">
-      <a class="page-header__logo" href="index.html" title="Логотип интернет-магазина Мишка">
-        <img src="http://dummyimage.com/86x34/000000/ffffff.svg&text=MISHKA" width="86" height="34"
-          alt="Логотип интернет-магазина Мишка">
-      </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">
-              Вязание на заказ
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--search" href="#">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--cart" href="#">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="main-nav">
+
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo" href="index.html" title="Логотип интернет-магазина Мишка">
+          <img class="main-nav__logo-svg" src="http://dummyimage.com/86x34/000000/ffffff.svg&text=MISHKA" width="86"
+            height="34" alt="Логотип интернет-магазина Мишка">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+
+      <ul class="main-nav__list main-nav__list--left">
+        <li class="main-nav__item main-nav__item--catalog">
+          <a class="main-nav__link" href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--order">
+          <a class="main-nav__link">
+            Вязание на заказ
+          </a>
+        </li>
+      </ul>
+
+      <ul class="main-nav__list main-nav__list--hidden">
+        <li class="main-nav__item main-nav__item--new">
+          <a class="main-nav__link" href="#">
+            Новые поступления
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--sale">
+          <a class="main-nav__link" href="#">
+            Распродажа
+          </a>
+        </li>
+        <p class="main-nav__shipping">Бесплатная доставка по России</p>
+      </ul>
+
+      <ul class="main-nav__list main-nav__list--right">
+        <li class="main-nav__item main-nav__item--search">
+          <a class="main-nav__link main-nav__link--search" href="#">
+            <span class="main-nav__link-hide">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--cart">
+          <a class="main-nav__link main-nav__link--cart" href="#">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+    </nav>
+
   </header>
 
   <main class="page-form">
-    <div class="page-form__container">
 
       <section class="form">
         <div class="page-title-wrapper">
           <h1 class="page-title-wrapper__header">Вязание на заказ</h1>
         </div>
-        <div class="form__container">
+        <div class="form__container container">
           <p class="form__intro">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
             уточнить детали.
           </p>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <div class="form__wrapper">
               <fieldset class="form__fieldset form__fieldset--type">
                 <legend class="form__legend form__legend--type">Тип</legend>
                 <ul class="form__control-list form__control-list--type">
@@ -148,12 +166,10 @@
               </fieldset>
               <div class="form__required">*Поля обязательны для заполнения</div>
               <button class="form__submit button" type="submit">Отправить заказ</button>
-            </div>
           </form>
         </div>
       </section>
 
-    </div>
   </main>
 
   <footer class="page-footer">

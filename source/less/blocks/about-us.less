@@ -9,6 +9,7 @@
   @media (min-width: @desktop-width) {
     width: 70%;
     margin: 0 auto;
+    margin-bottom: 90px;
   }
 }
 
@@ -34,4 +35,40 @@
 .about-us__item {
   min-height: 40px;
   padding-top: 83px;
+
+  &--flower {
+    @media (min-width: @tablet-width) {
+      order: 0;
+    }
+  }
+
+  &--money {
+    @media (min-width: @tablet-width) {
+      order: 2;
+    }
+  }
+
+  &--heart {
+    @media (min-width: @tablet-width) {
+      order: 4;
+    }
+  }
+
+  &--yarn {
+    @media (min-width: @tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--rocket {
+    @media (min-width: @tablet-width) {
+      order: 3;
+    }
+  }
+
+  &--gift {
+    @media (min-width: @tablet-width) {
+      order: 5;
+    }
+  }
 }

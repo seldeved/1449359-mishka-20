@@ -1,11 +1,16 @@
 .form__container {
-  padding: 17px 30px 55px;
+  padding-top: 17px;
+  padding-bottom: 55px;
 }
 
 .form__intro {
   margin: 0;
   margin-bottom: 29px;
   .normal-text(13px, 24px);
+
+  @media (min-width: @tablet-width) {
+    .normal-text(17px, 30px);
+  }
 }
 
 .form__control-list {

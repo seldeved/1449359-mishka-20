@@ -1,4 +1,11 @@
 .product-catalog__list {
   .no-markers();
-  padding: 30px 30px 0 30px;
+  padding-top: 30px;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin-bottom: 57px;
+  }
 }

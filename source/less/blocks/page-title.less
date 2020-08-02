@@ -5,9 +5,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+    min-height: 226px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 272px;
+    margin-bottom: 111px;
+  }
 }
 
 .page-title-wrapper__header {
   .header-text(27px, 30px);
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .header-text(43px, 50px);
+  }
+
+  @media (min-width: @desktop-width) {
+    .header-text(53px, 57px);
+  }
 }
