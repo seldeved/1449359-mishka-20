@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav container container--main-nav">
 
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" title="Логотип интернет-магазина Мишка">
@@ -67,22 +67,22 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница интернет-магазина Мишка</h1>
-    <section class="categories">
-      <div class="categories__wrapper container">
+    <section class="categories container container--categories">
+      <div class="categories__wrapper">
         <h2 class="categories__wrapper-header">Милые штуки ручной <br>работы для дома</h2>
       </div>
-      <div class="container container--categories">
-        <ul class="categories__list">
-          <li class="categories__item categories__item--interior">
-            <h3 class="categories__title">Предметы <br>интерьера</h3>
-            <a class="categories__link categories__link--interior" href="#"></a>
-          </li>
-          <li class="categories__item categories__item--toys">
-            <h3 class="categories__title">Детские <br>игрушки</h3>
-            <a class="categories__link categories__link--toys" href="#"></a>
-          </li>
-        </ul>
-      </div>
+      <ul class="categories__list">
+        <li class="categories__item categories__item--interior">
+          <a class="categories__link categories__link--interior" href="#">
+            <h3 class="categories__link-title">Предметы <br>интерьера</h3>
+          </a>
+        </li>
+        <li class="categories__item categories__item--toys">
+          <a class="categories__link categories__link--toys" href="#">
+            <h3 class="categories__link-title">Детские <br>игрушки</h3>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section class="feature-product container">
@@ -122,27 +122,29 @@
     </section>
 
     <section class="about-us container">
-      <h2 class="about-us__title">Коротко о нас&colon;</h2>
-      <ul class="about-us__list">
-        <li class="about-us__item about-us__item--flower">
-          Экологически чистые материалы
-        </li>
-        <li class="about-us__item about-us__item--money">
-          Скандинавский стиль по российской цене
-        </li>
-        <li class="about-us__item about-us__item--heart">
-          Увеличивает лайки на фотографиях
-        </li>
-        <li class="about-us__item about-us__item--yarn">
-          Связано вручную с любовью и умилением
-        </li>
-        <li class="about-us__item about-us__item--rocket">
-          Поддержка отечественного производителя
-        </li>
-        <li class="about-us__item about-us__item--gift">
-          Поставляется в подарочной упаковке
-        </li>
-      </ul>
+      <div class="about-us__wrapper">
+        <h2 class="about-us__title">Коротко о нас&colon;</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item about-us__item--flower">
+            Экологически чистые материалы
+          </li>
+          <li class="about-us__item about-us__item--money">
+            Скандинавский стиль по российской цене
+          </li>
+          <li class="about-us__item about-us__item--heart">
+            Увеличивает лайки на фотографиях
+          </li>
+          <li class="about-us__item about-us__item--yarn">
+            Связано вручную с любовью и умилением
+          </li>
+          <li class="about-us__item about-us__item--rocket">
+            Поддержка отечественного производителя
+          </li>
+          <li class="about-us__item about-us__item--gift">
+            Поставляется в подарочной упаковке
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="review container">

@@ -19,6 +19,12 @@
 
 .review__wrapper {
   @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
     padding-top: 78px;
     padding-left: 175px;
     padding-bottom: 96px;
@@ -33,7 +39,7 @@
 
   @media (min-width: @tablet-width) {
     .header-text(43px, 50px);
-    margin-bottom: 38px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -48,6 +54,8 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
 
@@ -116,10 +124,11 @@
   font-size: 18px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
     width: 175px;
-    top: 19%;
-    left: 70%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-bottom: 40px;
+    justify-self: end;
   }
 
   @media (min-width: @desktop-width) {
