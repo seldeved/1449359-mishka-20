@@ -67,22 +67,24 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница интернет-магазина Мишка</h1>
-    <section class="categories container container--categories">
-      <div class="categories__wrapper">
+    <section class="categories">
+      <div class="categories__wrapper container container--categories">
         <h2 class="categories__wrapper-header">Милые штуки ручной <br>работы для дома</h2>
       </div>
-      <ul class="categories__list">
-        <li class="categories__item categories__item--interior">
-          <a class="categories__link categories__link--interior" href="#">
-            <h3 class="categories__link-title">Предметы <br>интерьера</h3>
-          </a>
-        </li>
-        <li class="categories__item categories__item--toys">
-          <a class="categories__link categories__link--toys" href="#">
-            <h3 class="categories__link-title">Детские <br>игрушки</h3>
-          </a>
-        </li>
-      </ul>
+      <div class="container container--categories">
+        <ul class="categories__list">
+          <li class="categories__item categories__item--interior">
+            <a class="categories__link categories__link--interior" href="#">
+              <h3 class="categories__link-title">Предметы <br>интерьера</h3>
+            </a>
+          </li>
+          <li class="categories__item categories__item--toys">
+            <a class="categories__link categories__link--toys" href="#">
+              <h3 class="categories__link-title">Детские <br>игрушки</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="feature-product container">
@@ -204,41 +206,43 @@
 
   </main>
 
-  <footer class="page-footer container">
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
 
-    <a class="page-footer__logo" title="Логотип интернет-магазина Мишка">
-      <img src="http://dummyimage.com/86x34/000000/ffffff.svg&text=MISHKA" width="102" height="34"
-        alt="Логотип интернет-магазина Мишка">
-    </a>
-
-    <section class="page-footer__social social">
-      <h2 class="social__title visually-hidden">Мы в соцсетях</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#" aria-label="instagram">
-            <span>Instagram</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#" aria-label="facebook">
-            <span>Facebook</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#" aria-label="twitter">
-            <span>Twitter</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <div class="page-footer__copyright copyright">
-      <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Логотип HTML Academy">
-        HTML Academy
+      <a class="page-footer__logo" title="Логотип интернет-магазина Мишка">
+        <img src="http://dummyimage.com/86x34/000000/ffffff.svg&text=MISHKA" width="102" height="34"
+          alt="Логотип интернет-магазина Мишка">
       </a>
-    </div>
 
+      <section class="page-footer__social social">
+        <h2 class="social__title visually-hidden">Мы в соцсетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#" aria-label="instagram">
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="facebook">
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="twitter">
+              <span>Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Логотип HTML Academy">
+          HTML Academy
+        </a>
+      </div>
+
+    </div>
   </footer>
 
   <section class="modal-popup">

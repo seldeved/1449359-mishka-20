@@ -1,14 +1,17 @@
-.page-title-wrapper {
-  min-height: 177px;
-  padding: 0 30px;
+.page-title {
   background-color: @header-bg-color;
+}
+
+.page-title__container {
+  min-height: 177px;
+  padding: 50px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    padding: 0 50px;
-    min-height: 226px;
+    padding: 100px 50px;
+    min-height: 238px;
     margin-bottom: 37px;
   }
 
@@ -18,9 +21,10 @@
   }
 }
 
-.page-title-wrapper__header {
+.page-title__header {
   .header-text(27px, 30px);
   margin: 0;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     .header-text(43px, 50px);

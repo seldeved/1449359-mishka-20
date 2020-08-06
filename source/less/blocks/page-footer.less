@@ -1,5 +1,16 @@
 .page-footer {
   background-color: @header-bg-color;
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.page-footer__wrapper {
   min-height: 160px;
   display: flex;
   flex-direction: column;
@@ -8,13 +19,5 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-
-.page-footer__logo {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
   }
 }

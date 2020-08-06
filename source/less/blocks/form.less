@@ -42,7 +42,7 @@
       grid-column-gap: 60px;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 100px;
     }
@@ -74,11 +74,18 @@
 .form__fieldset {
   .custom-form();
 
+  &--color {
+    @media (min-width: @tablet-width) {
+      background-color: @header-bg-color;
+    }
+  }
+
   &--contacts {
     margin-bottom: 35px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 0;
+      background-color: @header-bg-color;
     }
   }
 }
@@ -94,10 +101,6 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 5fr;
-  }
-
-  &--grey {
-    background-color: @header-bg-color;
   }
 }
 
@@ -246,7 +249,7 @@
   }
 }
 
-.form__control--radio:checked + .form__label--radio::after {
+.form__control--radio:checked+.form__label--radio::after {
   content: "";
   position: absolute;
   left: -48px;
