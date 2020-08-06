@@ -1,13 +1,36 @@
 .page-title {
-  .header-text(27px, 30px);
-  margin: 0;
+  background-color: @header-bg-color;
 }
 
-.page-title__wrapper {
+.page-title__container {
   min-height: 177px;
-  padding: 0 30px;
-  background-color: @header-bg-color;
+  padding: 50px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 100px 50px;
+    min-height: 238px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 272px;
+    margin-bottom: 111px;
+  }
+}
+
+.page-title__header {
+  .header-text(27px, 30px);
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .header-text(43px, 50px);
+  }
+
+  @media (min-width: @desktop-width) {
+    .header-text(53px, 57px);
+  }
 }

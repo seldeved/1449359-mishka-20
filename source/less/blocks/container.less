@@ -1,0 +1,48 @@
+.container {
+  min-width: 320px;
+  padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.container--main-nav {
+  padding: 0;
+}
+
+.container--categories {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+  }
+}
+
+.container--contacts {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding-left: 225px;
+    padding-top: 71px;
+  }
+}
+
+.container--form {
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 197px;
+  }
+}
+
+.container--page-title {
+  padding: 0;
+}

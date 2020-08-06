@@ -2,8 +2,22 @@
   background-color: @header-bg-color;
 }
 
-.page-footer__container {
-  width: 320px;
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.page-footer__wrapper {
   min-height: 160px;
-  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

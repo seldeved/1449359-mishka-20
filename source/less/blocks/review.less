@@ -1,26 +1,82 @@
 .review {
   margin-bottom: 89px;
   .normal-text(15px, 30px);
+
+  @media (min-width: @tablet-width) {
+    .normal-text(17px, 30px);
+    background-color: @header-bg-color;
+    padding-top: 82px;
+    padding-bottom: 47px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.review__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+    padding-left: 175px;
+    padding-bottom: 96px;
+    background-color: @header-bg-color;
+  }
 }
 
 .review__title {
   margin-top: 0;
   margin-bottom: 14px;
   .header-text(25px, 30px);
-}
 
-.review__wrapper {
-  padding: 0 30px;
+  @media (min-width: @tablet-width) {
+    .header-text(43px, 50px);
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    .header-text(53px, 57px);
+    margin-bottom: 35px;
+  }
 }
 
 .review__item {
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 
 .review__text {
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.review__author-info {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    width: 36%;
+  }
 }
 
 .review__author-name {
@@ -38,6 +94,21 @@
   margin-bottom: 38px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 77%;
+    left: 74%;
+    width: 20%;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 66%;
+    left: 81%;
+    width: 15%;
+  }
 }
 
 .review__arrow {
@@ -51,4 +122,17 @@
 
 .review__write {
   font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-bottom: 40px;
+    justify-self: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 80%;
+  }
 }

@@ -1,5 +1,11 @@
 .copyright {
-  min-height: 80px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 0;
+  }
 }
 
 .copyright__text {
