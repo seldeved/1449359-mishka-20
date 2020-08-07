@@ -128,22 +128,22 @@
         <h2 class="about-us__title">Коротко о нас&colon;</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--flower">
-            Экологически чистые материалы
+            Экологически<br>чистые материалы
           </li>
           <li class="about-us__item about-us__item--money">
-            Скандинавский стиль по российской цене
+            Скандинавский стиль<br>по российской цене
           </li>
           <li class="about-us__item about-us__item--heart">
-            Увеличивает лайки на фотографиях
+            Увеличивает лайки<br>на фотографиях
           </li>
           <li class="about-us__item about-us__item--yarn">
-            Связано вручную с любовью и умилением
+            Связано вручную с<br>любовью и умилением
           </li>
           <li class="about-us__item about-us__item--rocket">
             Поддержка отечественного производителя
           </li>
           <li class="about-us__item about-us__item--gift">
-            Поставляется в подарочной упаковке
+            Поставляется в<br>подарочной упаковке
           </li>
         </ul>
       </div>
@@ -186,7 +186,8 @@
             </tr>
             <tr class="contacts__row">
               <td class="contacts__cell contacts__cell--left">адрес&colon;</td>
-              <td class="contacts__cel--right">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</td>
+              <td class="contacts__cell contacts__cel--right">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8,
+                офис 101</td>
             </tr>
           </tbody>
         </table>
@@ -250,15 +251,19 @@
       <h2 class="modal-popup__title">Добавить <br>в корзину</h2>
       <p class="modal-popup__text">Выберите размер&colon;</p>
       <form class="modal-popup__form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="modal-popup__label">
-          <input class="modal-popup__size-input modal-popup__size-input--small visually-hidden" type="radio"
-            name="size-select" value="S" checked> S
+        <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" id="size-input-small"
+          value="S" checked>
+        <label class="modal-popup__label" for="size-input-small">
+          <span class="modal-popup__size-value">S</span>
         </label>
-        <label class="modal-popup__label">
-          <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" value="M"> M
+        <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" id="size-input-medium"
+          value="M">
+        <label class="modal-popup__label" for="size-input-medium">
+          <span class="modal-popup__size-value">M</span>
         </label>
-        <label class="modal-popup__label">
-          <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" value="L"> L
+        <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" id="size-input-large" value="L">
+        <label class="modal-popup__label" for="size-input-large">
+          <span class="modal-popup__size-value">L</span>
         </label>
         <button class="modal-popup__submit button" type="submit">Добавить</button>
       </form>

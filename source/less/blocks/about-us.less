@@ -1,9 +1,10 @@
 .about-us {
   .header-text(17px, 20px);
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 
   @media (min-width: @tablet-width) {
     .header-text(20px, 22px);
+    margin-bottom: 83px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,6 +25,12 @@
 
   @media (min-width: @tablet-width) {
     .header-text(43px, 50px);
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .header-text(53px, 57px);
+    margin-bottom: 14px;
   }
 }
 
@@ -33,12 +40,15 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10%;
+    grid-row-gap: 27px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 80%;
   }
 }
 
 .about-us__item {
-  min-height: 40px;
   padding-top: 83px;
 
   &--flower {

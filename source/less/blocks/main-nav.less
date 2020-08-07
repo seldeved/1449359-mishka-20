@@ -59,30 +59,32 @@
     @media (min-width: @tablet-width) {
       order: 1;
       display: flex;
-      width: 50%;
+      width: 52%;
     }
 
     @media (min-width: @desktop-width) {
       order: 2;
-      width: 40%;
+      width: 35%;
     }
   }
 }
 
 .main-nav__item {
   min-height: 79px;
-  padding: 20px 30px;
+  padding: 20px 30px 20px 76px;
   border-bottom: 1px solid @box-border-color;
   display: flex;
   align-items: center;
-  justify-content: center;
 
+  @media (min-width: @tablet-width) {
+    min-height: 64px;
+  }
 
   &--catalog {
     @media (min-width: @tablet-width) {
       .header-text(15px, 24px);
       padding-left: 50px;
-      padding-right: 36px;
+      padding-right: 35px;
       border: none;
     }
 
@@ -98,7 +100,7 @@
     @media (min-width: @tablet-width) {
       .header-text(15px, 24px);
       padding-left: 0;
-      padding-right: 36px;
+      padding-right: 35px;
       border: none;
     }
 
@@ -108,6 +110,7 @@
       border-left: 1px solid @box-border-color;
       flex-grow: 1;
       justify-content: flex-start;
+      padding-left: 35px;
     }
   }
 
@@ -129,19 +132,21 @@
       .header-text(15px, 24px);
       border: none;
       display: flex;
+      padding-left: 32px;
     }
   }
 
   &--search {
     @media (min-width: @tablet-width) {
-      width: 21%;
+      width: 24%;
       border-left: 1px solid @box-border-color;
+      padding: 20px;
     }
   }
 
   &--cart {
     @media (min-width: @tablet-width) {
-      width: 79%;
+      width: 91%;
       border-left: 1px solid @box-border-color;
       padding-right: 50px;
       padding-left: 53px;
@@ -154,6 +159,7 @@
 
   @media (min-width: @tablet-width) {
     .normal-text(15px, 24px);
+    margin: 0;
     display: block;
     margin-left: auto;
     align-self: center;
@@ -166,26 +172,24 @@
 
 .main-nav__wrapper {
   min-height: 79px;
-  padding: 0 30px;
+  padding: 21px 30px 21px 115px;
   border-bottom: 1px solid @box-border-color;
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     min-height: 89px;
-    padding: 0 50px;
-    width: 50%;
+    padding: 7px 50px;
+    width: 48%;
     justify-content: flex-start;
     order: 0;
   }
 
   @media (min-width: @desktop-width) {
-    justify-content: center;
     order: 1;
-    width: 20%;
-    padding: 0;
+    width: 25%;
   }
 }
 
