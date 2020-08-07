@@ -87,7 +87,7 @@
               </a>
               <p class="product__description">Рост 30 см, вес 200 г</p>
               <div class="product__price-wrapper">
-                <span class="product__price">1200 руб.</span>
+                <span class="product__price">1 200 руб.</span>
                 <a class="product__order-button" href="#" title="Добавить к заказу">Корзина</a>
               </div>
             </div>
@@ -121,7 +121,7 @@
               </a>
               <p class="product__description">Диаметр 30 см, высота 30 см</p>
               <div class="product__price-wrapper">
-                <span class="product__price">1500 руб.</span>
+                <span class="product__price">1 500 руб.</span>
                 <a class="product__order-button" href="#" title="Добавить к заказу">Корзина</a>
               </div>
             </div>
@@ -194,15 +194,19 @@
       <h2 class="modal-popup__title">Добавить <br>в корзину</h2>
       <p class="modal-popup__text">Выберите размер&colon;</p>
       <form class="modal-popup__form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="modal-popup__label">
-          <input class="modal-popup__size-input modal-popup__size-input--small visually-hidden" type="radio"
-            name="size-select" value="S" checked> S
+        <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" id="size-input-small"
+          value="S" checked>
+        <label class="modal-popup__label" for="size-input-small">
+          <span class="modal-popup__size-value">S</span>
         </label>
-        <label class="modal-popup__label">
-          <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" value="M"> M
+        <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" id="size-input-medium"
+          value="M">
+        <label class="modal-popup__label" for="size-input-medium">
+          <span class="modal-popup__size-value">M</span>
         </label>
-        <label class="modal-popup__label">
-          <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" value="L"> L
+        <input class="modal-popup__size-input visually-hidden" type="radio" name="size-select" id="size-input-large" value="L">
+        <label class="modal-popup__label" for="size-input-large">
+          <span class="modal-popup__size-value">L</span>
         </label>
         <button class="modal-popup__submit button" type="submit">Добавить</button>
       </form>

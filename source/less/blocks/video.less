@@ -1,6 +1,17 @@
+.video {
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 63px;
+  }
+}
+
 .video__border-wrapper {
   width: 100%;
-  min-height: 503px;
   border: 1px solid @box-border-color;
   padding-top: 22px;
   padding-bottom: 33px;
@@ -9,6 +20,7 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
+    padding-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,37 +29,41 @@
     grid-template-rows: 152px 152px 152px;
     grid-column-gap: 79px;
     padding-bottom: 0;
-    padding-right: 57px;
   }
 }
 
 .video__video-wrapper {
   order: 1;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     order: 0;
+    margin-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
     grid-row-start: 1;
     grid-row-end: -1;
+    margin-bottom: 0;
   }
 }
 
 .video__title {
   .header-text(17px, 24px);
   margin: 0;
-  margin-left: 91px;
+  padding-left: 91px;
   margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     .header-text(20px, 24px);
-    margin-left: 107px;
+    padding-left: 107px;
     order: 1;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    padding: 0;
     padding-top: 96px;
     padding-right: 50px;
   }
@@ -56,7 +72,6 @@
 .video__media {
   width: 260px;
   height: 150px;
-  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     width: 668px;
@@ -73,19 +88,19 @@
 .video__description {
   .normal-text(13px, 24px);
   margin: 0;
-  margin-left: 34px;
+  padding-left: 34px;
   margin-bottom: 41px;
   order: 2;
 
   @media (min-width: @tablet-width) {
     .normal-text(15px, 30px);
-    margin-left: 40px;
+    padding-left: 40px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     margin: 0;
-    padding-top: 27px;
+    padding: 18px 20px 15px 0;
   }
 }
 
@@ -94,17 +109,21 @@
 }
 
 .video__order {
+  .header-text(18px, 16px);
   order: 3;
   display: block;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 584px;
+    font-size: 17px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    width: 80%;
     grid-column-start: 2;
-    align-self: center;
+    align-self: start;
+    margin: 0;
+    margin-top: 40px;
   }
 }

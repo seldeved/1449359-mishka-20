@@ -40,7 +40,7 @@
 .product__description {
   .normal-text(13px, 30px);
   margin: 0;
-  margin-bottom: 41px;
+  padding-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     .normal-text(15px, 30px);
@@ -48,18 +48,20 @@
 }
 
 .product__info-container {
-  padding: 27px 28px;
+  padding: 26px 27px;
   border: 1px solid @box-border-color;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  // display: flex;
+  // flex-direction: column;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
-    padding: 27px 34px 25px;
+    padding: 26px 32px 25px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 27px 26px 26px 28px;
+    padding: 25px 26px 20px 26px;
   }
 }
 
