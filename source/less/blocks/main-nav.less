@@ -31,14 +31,12 @@
     @media (min-width: @tablet-width) {
       order: 2;
       display: flex;
-      background-color: @header-bg-color;
       flex-grow: 1;
     }
 
     @media (min-width: @desktop-width) {
       order: 0;
       width: 40%;
-      background-color: transparent;
     }
   }
 
@@ -47,7 +45,6 @@
       order: 3;
       padding: 0 50px;
       display: flex;
-      background-color: @header-bg-color;
     }
 
     @media (min-width: @desktop-width) {
@@ -78,6 +75,7 @@
 
   @media (min-width: @tablet-width) {
     min-height: 64px;
+    border-bottom: none;
   }
 
   &--catalog {
@@ -85,12 +83,10 @@
       .header-text(15px, 24px);
       padding-left: 50px;
       padding-right: 35px;
-      border: none;
     }
 
     @media (min-width: @desktop-width) {
       .header-text(17px, 24px);
-      border-bottom: 1px solid @box-border-color;
       flex-grow: 1;
       justify-content: flex-start;
     }
@@ -101,12 +97,10 @@
       .header-text(15px, 24px);
       padding-left: 0;
       padding-right: 35px;
-      border: none;
     }
 
     @media (min-width: @desktop-width) {
       .header-text(17px, 24px);
-      border-bottom: 1px solid @box-border-color;
       border-left: 1px solid @box-border-color;
       flex-grow: 1;
       justify-content: flex-start;
@@ -119,7 +113,7 @@
 
     @media (min-width: @desktop-width) {
       .header-text(15px, 24px);
-      border: none;
+
       display: flex;
       padding-left: 0;
     }
@@ -130,7 +124,6 @@
 
     @media (min-width: @desktop-width) {
       .header-text(15px, 24px);
-      border: none;
       display: flex;
       padding-left: 32px;
     }
@@ -183,6 +176,7 @@
     min-height: 89px;
     padding: 7px 50px;
     width: 48%;
+    border-bottom: none;
     justify-content: flex-start;
     order: 0;
   }
