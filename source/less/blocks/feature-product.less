@@ -23,6 +23,19 @@
     background-size: contain;
     bottom: 30px;
     left: 0;
+
+    @media (min-width: @tablet-width) {
+      height: 17px;
+      bottom: 5px;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("/img/bg-zigzag-line-desktop.svg");
+      height: 23px;
+      bottom: 17px;
+      background-position-x: center;
+    }
   }
 }
 

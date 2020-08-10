@@ -141,6 +141,11 @@
       background-image: url("/img/icon-search.svg");
       top: 31px;
       left: 32px;
+
+      @media (min-width: @tablet-width) {
+        top: 35px;
+        left: 34px;
+      }
     }
 
     @media (min-width: @tablet-width) {
@@ -162,6 +167,10 @@
       background-image: url("/img/icon-cart.svg");
       top: 30px;
       left: 30px;
+
+      @media (min-width: @tablet-width) {
+        top: 35px;
+      }
     }
 
     @media (min-width: @tablet-width) {
@@ -210,6 +219,7 @@
   @media (min-width: @desktop-width) {
     order: 1;
     width: 25%;
+    padding: 0 50px;
   }
 }
 

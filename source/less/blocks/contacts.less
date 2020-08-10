@@ -19,6 +19,7 @@
   margin-top: 0;
   margin-bottom: 27px;
   .header-text(18px, 30px);
+  position: relative;
 
   @media (min-width: @tablet-width) {
     .header-text(43px, 50px);
@@ -30,6 +31,24 @@
     .header-text(53px, 57px);
     padding: 0;
     margin-bottom: 36px;
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 47px;
+      height: 81px;
+      background-image: url("/img/icon-flag.svg");
+      top: -22px;
+      right: 3px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -17px;
+      left: -112px;
+    }
   }
 }
 
@@ -105,6 +124,16 @@
     top: 32%;
     left: 43%;
     z-index: 1;
+
+    @media (min-width: @tablet-width) {
+      top: 30%;
+      left: 47%;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 32%;
+      left: 45%;
+    }
   }
 }
 
