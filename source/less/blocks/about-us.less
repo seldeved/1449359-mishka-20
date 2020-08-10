@@ -50,38 +50,106 @@
 
 .about-us__item {
   padding-top: 83px;
+  position: relative;
 
   &--flower {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 32px;
+      height: 37px;
+      background-image: url("/img/icon-feature-flower.svg");
+      top: 28px;
+      left: 8px;
+    }
+
     @media (min-width: @tablet-width) {
       order: 0;
     }
   }
 
   &--money {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 47px;
+      height: 27px;
+      background-image: url("/img/icon-feature-money.svg");
+      top: 29px;
+      left: 0;
+    }
+
     @media (min-width: @tablet-width) {
       order: 2;
     }
   }
 
   &--heart {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 33px;
+      height: 28px;
+      background-image: url("/img/icon-feature-heart.svg");
+      top: 34px;
+      left: 7px;
+    }
+
     @media (min-width: @tablet-width) {
       order: 4;
     }
   }
 
   &--yarn {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 34px;
+      height: 34px;
+      background-image: url("/img/icon-feature-ball.svg");
+      top: 31px;
+      left: 3px;
+    }
+
     @media (min-width: @tablet-width) {
       order: 1;
     }
   }
 
   &--rocket {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 55px;
+      height: 23px;
+      background-image: url("/img/icon-feature-rocket.svg");
+      top: 32px;
+      left: -5px;
+    }
+
     @media (min-width: @tablet-width) {
       order: 3;
     }
   }
 
   &--gift {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 33px;
+      height: 33px;
+      background-image: url("/img/icon-feature-gift.svg");
+      top: 30px;
+      left: 3px;
+    }
+
+
     @media (min-width: @tablet-width) {
       order: 5;
     }

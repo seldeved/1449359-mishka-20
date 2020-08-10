@@ -17,7 +17,7 @@
 
 .contacts__title {
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   .header-text(18px, 30px);
 
   @media (min-width: @tablet-width) {
@@ -35,7 +35,7 @@
 
 .contacts__table {
   border-collapse: collapse;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 48px;
@@ -82,6 +82,7 @@
 
 .contacts__map {
   margin-bottom: 39px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 55px;
@@ -93,11 +94,24 @@
     top: 0;
     left: 50%;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 67px;
+    height: 100px;
+    background-image: url("/img/icon-map-pin.svg");
+    top: 32%;
+    left: 43%;
+    z-index: 1;
+  }
 }
 
 .contacts__map-pic {
   width: 322px;
   height: 457px;
+  z-index: 0;
 
   @media (min-width: @tablet-width) {
     width: 100%;
