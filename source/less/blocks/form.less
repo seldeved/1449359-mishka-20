@@ -7,7 +7,7 @@
   margin: 0;
   margin-bottom: 29px;
   .normal-text(13px, 24px);
-  padding-top: 17px;
+  padding-top: 16px;
 
   @media (min-width: @tablet-width) {
     .normal-text(17px, 30px);
@@ -55,8 +55,8 @@
   }
 
   &--name {
-    padding-top: 29px;
-    padding-bottom: 12px;
+    padding-top: 28px;
+    padding-bottom: 13px;
 
     @media (min-width: @tablet-width) {
       padding: 0;
@@ -104,7 +104,7 @@
   }
 
   &--contacts {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     @media (min-width: @tablet-width) {
       padding-top: 45px;
@@ -121,7 +121,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-bottom: 51px;
+      padding-bottom: 50px;
     }
   }
 }
@@ -220,7 +220,7 @@
     content: "";
     position: absolute;
     left: -60px;
-    top: 0;
+    top: -2px;
     width: 38px;
     height: 39px;
     border: 2px solid @text-black;
@@ -233,20 +233,66 @@
 
   &--tel {
     margin-bottom: 34px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 7px;
+      top: 14px;
+      width: 25px;
+      height: 24px;
+      background-image: url("/img/icon-phone.svg");
+      opacity: 0.2;
+    }
 
     @media (min-width: @tablet-width) {
       margin-bottom: 24px;
+
+      &::after {
+        right: 26px;
+        top: 16px;
+      }
     }
 
     @media (min-width: @desktop-width) {
       padding-right: 28px;
       margin-bottom: 22px;
+
+      &::after {
+        right: 35px;
+      }
     }
   }
 
   &--email {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 3px;
+      top: 14px;
+      width: 32px;
+      height: 27px;
+      background-image: url("/img/icon-mail.svg");
+      opacity: 0.2;
+    }
+
+    @media (min-width: @tablet-width) {
+      &::after {
+        right: 32px;
+        top: 14px;
+      }
+    }
+
     @media (min-width: @desktop-width) {
       padding-right: 28px;
+
+      &::after {
+        right: 32px;
+        top: 14px;
+      }
     }
   }
 }
@@ -286,7 +332,8 @@
 
   &--tel,
   &--email {
-    min-height: 55px;
+    min-height: 56px;
+    padding-right: 41px;
 
     @media (min-width: @tablet-width) {
       padding-left: 17px;
@@ -328,6 +375,24 @@
   }
 }
 
+.form__control--checkbox:checked + .form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  left: -58px;
+  top: 4px;
+  width: 39px;
+  height: 36px;
+  background-image: url("/img/icon-tick.svg");
+  transform: scale(0.7, 0.7);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    left: -49px;
+    top: 15px;
+    transform: scale(1, 1);
+  }
+}
+
 .form__required {
   .normal-text(14px, 16px);
   margin-bottom: 30px;
@@ -342,13 +407,15 @@
   line-height: 16px;
   background-color: transparent;
   cursor: pointer;
+  align-self: center;
 }
 
 .form__bottom-wrapper {
   padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
