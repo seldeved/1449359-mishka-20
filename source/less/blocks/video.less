@@ -35,6 +35,7 @@
 .video__video-wrapper {
   order: 1;
   margin-bottom: 35px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     order: 0;
@@ -53,6 +54,7 @@
   margin: 0;
   padding-left: 91px;
   margin-bottom: 26px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     .header-text(20px, 24px);
@@ -66,6 +68,27 @@
     padding: 0;
     padding-top: 96px;
     padding-right: 50px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 22px;
+    background-image: url("/img/icon-video.svg");
+    top: 11px;
+    left: 33px;
+
+    @media (min-width: @tablet-width) {
+      top: -3px;
+      left: 41px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 46px;
+      left: -1px;
+    }
   }
 }
 
@@ -105,7 +128,30 @@
 }
 
 .video__button {
-  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 76px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  outline: none;
+}
+
+.video__button:hover .video__button-svg {
+  transform: scale(1.2, 1.2);
+}
+
+.video__button:focus .video__button-svg {
+  transform: scale(1.2, 1.2);
+}
+
+.video__button:active .video__button-svg {
+  transform: scale(0.8, 0.8);
+  fill-opacity: 0.7;
 }
 
 .video__order {
