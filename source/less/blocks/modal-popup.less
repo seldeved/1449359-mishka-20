@@ -78,9 +78,15 @@
   .header-text(17px, 16px);
 }
 
-.modal-popup__size-input:hover + .modal-popup__label,
+.modal-popup__size-input:hover + .modal-popup__label {
+  border-color: @popup-opacity-hover;
+}
+
 .modal-popup__size-input:focus + .modal-popup__label {
   border-color: @popup-opacity-hover;
+  outline: thin dotted;
+  // outline: 5px auto -webkit-focus-ring-color;
+  // outline-offset: -2px;
 }
 
 .modal-popup__size-input:checked + .modal-popup__label {
