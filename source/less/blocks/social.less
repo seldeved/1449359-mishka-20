@@ -1,17 +1,48 @@
 .social {
   display: flex;
-  flex-grow: 1;
-  align-items: center;
-
-  @media (min-width: @tablet-width) {
-    flex-grow: 0;
-  }
+  justify-content: center;
 }
 
 .social__item {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .social__list {
   .no-markers();
+  display: grid;
+  grid-template-columns: 53px 62px 60px;
+  grid-row-gap: 20px;
+  align-items: center;
+  align-self: center;
+}
+
+.social__link {
+  position: relative;
+  display: inline-block;
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
+}
+
+.social__link:hover .social__link-icon,
+.social__link:focus .social__link-icon {
+  fill: @dark-cyan-hover;
+}
+
+.social__link:active .social__link-icon {
+  fill: @dark-cyan-hover;
+  fill-opacity: 0.3;
 }

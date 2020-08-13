@@ -1,5 +1,33 @@
 .page-title {
   background-color: @header-bg-color;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 23px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 208px;
+    margin-bottom: 81px;
+
+    &::after {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      height: 34px;
+      background-size: contain;
+      bottom: -1px;
+      left: 0;
+    }
+  }
 }
 
 .page-title__container {
@@ -10,14 +38,15 @@
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    padding: 100px 50px;
-    min-height: 238px;
+    padding: 37px 50px;
+    min-height: 174px;
     margin-bottom: 37px;
+    align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 272px;
-    margin-bottom: 111px;
+    min-height: 208px;
+    margin-bottom: 81px;
   }
 }
 

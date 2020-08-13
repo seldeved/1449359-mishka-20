@@ -1,13 +1,30 @@
 .copyright {
   display: flex;
   flex-grow: 1;
-  align-items: center;
 
   @media (min-width: @tablet-width) {
-    flex-grow: 0;
+    padding-top: 7px;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 
 .copyright__text {
   .header-text(19px, 18px);
+  margin-right: 26px;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__link:hover .copyright__link-shape,
+.copyright__link:focus .copyright__link-shape {
+  fill: @dark-cyan-hover;
+}
+
+.copyright__link:active .copyright__link-shape {
+  fill: @dark-cyan-hover;
+  fill-opacity: 0.3;
 }
