@@ -1,21 +1,8 @@
 .page-title {
   background-color: @header-bg-color;
-}
-
-.page-title__container {
-  min-height: 177px;
-  padding: 50px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 37px 50px;
-    min-height: 174px;
-    margin-bottom: 37px;
-    align-items: flex-start;
-
     &::after {
       content: "";
       position: absolute;
@@ -37,9 +24,29 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       height: 34px;
       background-size: contain;
-      bottom: 1px;
+      bottom: -1px;
       left: 0;
     }
+  }
+}
+
+.page-title__container {
+  min-height: 177px;
+  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 37px 50px;
+    min-height: 174px;
+    margin-bottom: 37px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 208px;
+    margin-bottom: 81px;
   }
 }
 

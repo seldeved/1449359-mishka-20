@@ -3,6 +3,7 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position-x: center;
   background-position-y: -17px;
+  background-repeat: no-repeat;
   margin-bottom: 29px;
   position: relative;
 
@@ -35,10 +36,14 @@
     &::after {
       background-image: url("../img/bg-zigzag-fill-desktop.svg");
       height: 34px;
-      background-size: contain;
+      background-size: 100% 100%;
       bottom: -16px;
       left: 0;
     }
+  }
+
+  &--main {
+    background-color: @hero-bg-color;
   }
 }
 
