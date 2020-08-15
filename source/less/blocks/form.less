@@ -269,7 +269,7 @@
 .form__label--checkbox:active {
   &::before {
     border-color: @text-black;
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
@@ -296,7 +296,7 @@
     position: absolute;
     right: 7px;
     top: 14px;
-    background-image: url(../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
     opacity: 0.2;
 
     @media (min-width: @tablet-width) {
@@ -393,13 +393,11 @@
   }
 }
 
-.form__control--radio:focus+.form__label--radio::before {
+.form__control--radio:focus + .form__label--radio::before {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
 }
 
-.form__control--radio:checked+.form__label--radio::after {
+.form__control--radio:checked + .form__label--radio::after {
   content: "";
   position: absolute;
   left: -48px;
@@ -417,13 +415,11 @@
   }
 }
 
-.form__control--checkbox:focus+.form__label--checkbox::before {
+.form__control--checkbox:focus + .form__label--checkbox::before {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
 }
 
-.form__control--checkbox:checked+.form__label--checkbox::after {
+.form__control--checkbox:checked + .form__label--checkbox::after {
   content: "";
   position: absolute;
   left: -58px;
@@ -451,6 +447,11 @@
   stroke: @input-button;
   fill: @input-button;
   opacity: 1;
+}
+
+.form__control--textarea:hover,
+.form__control--textarea:focus {
+  border-color: @input-button;
 }
 
 
