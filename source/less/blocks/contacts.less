@@ -1,9 +1,13 @@
 .contacts {
   .normal-text(15px, 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     .normal-text(17px, 30px);
     margin-bottom: 17px;
+    align-items: stretch;
   }
 
   @media (min-width: @desktop-width) {
@@ -89,14 +93,25 @@
     width: 76px;
     vertical-align: top;
   }
-
-  &--underlined {
-    border-bottom: 1px solid @main-cyan;
-  }
 }
 
 .contacts__mail {
   color: @text-black;
+  border-bottom: 1px solid @input-button;
+  padding-bottom: 3px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 7px;
+  }
+
+  &:hover,
+  &:focus {
+    color: @dark-cyan-hover;
+  }
+
+  &:active {
+    border: none;
+  }
 }
 
 .contacts__map {
@@ -144,6 +159,7 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    height: auto;
   }
 
   @media (min-width: @desktop-width) {
