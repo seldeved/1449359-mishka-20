@@ -1,0 +1,15 @@
+.form-divider {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    height: 1px;
+    background-color: @input-button;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}

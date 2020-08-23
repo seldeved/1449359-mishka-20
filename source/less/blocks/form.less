@@ -21,6 +21,7 @@
 
 .form__control-list {
   .no-markers();
+  position: relative;
 
   &--type {
     padding-left: 60px;
@@ -140,30 +141,14 @@
 
 .form__legend {
   .custom-legend();
+  background-color: @basic-white;
+  z-index: 1;
+  padding-right: 17px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 59px;
-    top: 11px;
-    width: 200px;
-    height: 1px;
-    border-top: 1px solid @input-button;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
   }
-}
-
-.form__legend--email::after {
-  position: absolute;
-  left: 77px;
-  top: 11px;
-  width: 182px;
-  height: 1px;
-  border-top: 1px solid @input-button;
 }
 
 .form__label {
@@ -237,7 +222,6 @@
 
   &--tel {
     margin-bottom: 34px;
-    position: relative;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 22px;
@@ -250,8 +234,6 @@
   }
 
   &--email {
-    position: relative;
-
     @media (min-width: @desktop-width) {
       padding-right: 28px;
     }
@@ -363,6 +345,7 @@
     min-height: 56px;
     padding-right: 41px;
     outline: none;
+    position: relative;
 
     &:hover,
     &:focus {
@@ -382,6 +365,7 @@
     border: 2px solid @text-black;
     box-shadow: none;
     margin-top: 20px;
+    position: relative;
 
     @media (min-width: @tablet-width) {
       margin-top: 0;
