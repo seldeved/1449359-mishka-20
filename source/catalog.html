@@ -9,8 +9,8 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <nav class="main-nav container container--main-nav">
+  <header class="page-header page-header--index">
+    <nav class="main-nav main-nav--closed main-nav--nojs container container--main-nav">
 
       <div class="main-nav__wrapper">
         <a class="main-nav__logo" href="index.html" title="Логотип интернет-магазина Мишка">
@@ -21,17 +21,12 @@
               alt="Логотип интернет-магазина Мишка">
           </picture>
         </a>
-        <!-- <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button> -->
-        <div class="main-nav__toggle">
-          <input class="main-nav__toggle-input" type="checkbox" checked>
+        <button class="main-nav__toggle">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
-
       <ul class="main-nav__list main-nav__list--left">
         <li class="main-nav__item main-nav__item--catalog">
           <a class="main-nav__link main-nav__link--catalog">
@@ -113,7 +108,7 @@
               <p class="product__description">Рост 30 см, вес 200 г</p>
               <div class="product__price-wrapper">
                 <span class="product__price">1 200 руб.</span>
-                <a class="product__cart-button" href="#" title="Добавить к заказу">
+                <a class="product__cart-button size-select" href="#" title="Добавить к заказу">
                   <svg width="21" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="product__cart-icon" opacity=".2"
                       d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 007.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66z"
@@ -141,7 +136,7 @@
               <p class="product__description">Диаметр 15 см, высота 10 см</p>
               <div class="product__price-wrapper">
                 <span class="product__price">690 руб.</span>
-                <a class="product__cart-button" href="#" title="Добавить к заказу">
+                <a class="product__cart-button size-select" href="#" title="Добавить к заказу">
                   <svg width="21" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="product__cart-icon" opacity=".2"
                       d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 007.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66z"
@@ -169,7 +164,7 @@
               <p class="product__description">Диаметр 30 см, высота 30 см</p>
               <div class="product__price-wrapper">
                 <span class="product__price">1 500 руб.</span>
-                <a class="product__cart-button" href="#" title="Добавить к заказу">
+                <a class="product__cart-button size-select" href="#" title="Добавить к заказу">
                   <svg width="21" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="product__cart-icon" opacity=".2"
                       d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 007.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66z"
@@ -343,7 +338,12 @@
         <button class="modal-popup__submit" type="submit">Добавить</button>
       </form>
     </div>
+    <div class="modal-popup__overlay"></div>
   </section>
+
+
+  <script src="js/main-nav.js"></script>
+  <script src="js/modal-popup.js"></script>
 
 </body>
 
