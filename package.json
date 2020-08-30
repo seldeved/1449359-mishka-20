@@ -21,7 +21,7 @@
     "stylelint-config-htmlacademy": "0.1.4"
   },
   "scripts": {
-    "editorconfig": "editorconfig-checker -exclude *.css",
+    "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
