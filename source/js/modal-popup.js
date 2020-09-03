@@ -4,8 +4,8 @@ var sizeInput = modalPopup.querySelector(".modal-popup__size-input");
 var overlay = document.querySelector(".modal-popup__overlay");
 
 for (var i = 0; i < sizeSelect.length; i++) {
-  var modalPopup = sizeSelect[i];
-  console.log(modalPopup);
+  // var modalPopup = sizeSelect[i];
+  // console.log(modalPopup);
   sizeSelect[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     modalPopup.classList.add("modal-popup--show");

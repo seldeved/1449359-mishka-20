@@ -31,6 +31,12 @@ const styles = () => {
     .pipe(sync.stream());
 }
 exports.styles = styles;
+// Scripts
+const scripts = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("./build/js"))
+    .pipe(sync.stream());
+}
 // HTML
 const html = () => {
   return gulp.src("source/*.html")
@@ -99,6 +105,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
   gulp.watch("source/*.html", gulp.series(html));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
 }
 // Build
 const build = gulp.series(

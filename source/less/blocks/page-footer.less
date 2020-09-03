@@ -14,8 +14,8 @@
 
 .page-footer__wrapper {
   min-height: 160px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
 
@@ -35,8 +35,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
     padding-top: 25px;
     padding-bottom: 25px;
     min-height: 143px;
